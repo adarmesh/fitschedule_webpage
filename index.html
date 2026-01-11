@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitSchedule - Client Scheduling & Session Tracking</title>
-    <meta name="description" content="The complete scheduling and session tracking app for trainers, coaches, therapists, and tutors. Manage clients, track sessions, and organize your schedule effortlessly.">
+    <meta name="description"
+        content="The complete scheduling and session tracking app for trainers, coaches, therapists, and tutors. Manage clients, track sessions, and organize your schedule effortlessly.">
     <style>
         * {
             margin: 0;
@@ -42,22 +44,26 @@
             width: 200%;
             height: 200%;
             background: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
             animation: glow 20s ease-in-out infinite;
             pointer-events: none;
             z-index: 0;
         }
 
         @keyframes glow {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(0, 0) scale(1);
                 opacity: 1;
             }
+
             33% {
                 transform: translate(30px, -30px) scale(1.1);
                 opacity: 0.8;
             }
+
             66% {
                 transform: translate(-30px, 30px) scale(0.9);
                 opacity: 0.8;
@@ -97,9 +103,12 @@
         }
 
         .logo-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 15px;
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 12px;
+            padding: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .logo-text {
@@ -160,21 +169,24 @@
             cursor: pointer;
             position: relative;
             box-shadow: 0 0 30px rgba(79, 70, 229, 0.5),
-                        0 0 60px rgba(79, 70, 229, 0.3),
-                        0 0 90px rgba(79, 70, 229, 0.2);
+                0 0 60px rgba(79, 70, 229, 0.3),
+                0 0 90px rgba(79, 70, 229, 0.2);
             animation: pulse-glow 3s ease-in-out infinite;
         }
 
         @keyframes pulse-glow {
-            0%, 100% {
+
+            0%,
+            100% {
                 box-shadow: 0 0 30px rgba(79, 70, 229, 0.5),
-                            0 0 60px rgba(79, 70, 229, 0.3),
-                            0 0 90px rgba(79, 70, 229, 0.2);
+                    0 0 60px rgba(79, 70, 229, 0.3),
+                    0 0 90px rgba(79, 70, 229, 0.2);
             }
+
             50% {
                 box-shadow: 0 0 40px rgba(79, 70, 229, 0.6),
-                            0 0 80px rgba(79, 70, 229, 0.4),
-                            0 0 120px rgba(79, 70, 229, 0.3);
+                    0 0 80px rgba(79, 70, 229, 0.4),
+                    0 0 120px rgba(79, 70, 229, 0.3);
             }
         }
 
@@ -182,8 +194,8 @@
             background: var(--purple-hover);
             transform: translateY(-2px);
             box-shadow: 0 0 40px rgba(79, 70, 229, 0.7),
-                        0 0 80px rgba(79, 70, 229, 0.5),
-                        0 0 120px rgba(79, 70, 229, 0.3);
+                0 0 80px rgba(79, 70, 229, 0.5),
+                0 0 120px rgba(79, 70, 229, 0.3);
         }
 
         .target-audience {
@@ -232,7 +244,7 @@
             direction: rtl;
         }
 
-        .feature-card:nth-child(even) > * {
+        .feature-card:nth-child(even)>* {
             direction: ltr;
         }
 
@@ -365,10 +377,12 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-content">
             <a href="/" class="logo">
+                <img src="assets/icon.png" alt="FitSchedule Icon" class="logo-icon">
                 <span class="logo-text">FitSchedule</span>
             </a>
             <a href="privacy.html" class="nav-link">Privacy & Terms</a>
@@ -382,8 +396,9 @@
                 <span class="gradient-text">Client Scheduling</span><br>
                 Solution
             </h1>
-            <p>Streamline scheduling, track sessions, and manage clients effortlessly. Built for professionals who value simplicity and efficiency.</p>
-            
+            <p>Streamline scheduling, track sessions, and manage clients effortlessly. Built for professionals who value
+                simplicity and efficiency.</p>
+
             <a href="" class="download-badge">
                 Download on iOS
             </a>
@@ -404,7 +419,8 @@
                     </div>
                     <div class="feature-content">
                         <h3 class="feature-title">Smart Calendar</h3>
-                        <p class="feature-summary">View your schedule with flexible calendar layouts and effortless navigation that keeps you organized throughout your day.</p>
+                        <p class="feature-summary">View your schedule with flexible calendar layouts and effortless
+                            navigation that keeps you organized throughout your day.</p>
                         <ul class="feature-description">
                             <li>Intuitive calendar with day, 3-day, and week views</li>
                             <li>Color-coded sessions with infinite horizontal scrolling</li>
@@ -419,7 +435,8 @@
                     </div>
                     <div class="feature-content">
                         <h3 class="feature-title">Easy Member Management</h3>
-                        <p class="feature-summary">Quickly build your client list by importing from your phone or adding manually, keeping everything organized and accessible.</p>
+                        <p class="feature-summary">Quickly build your client list by importing from your phone or adding
+                            manually, keeping everything organized and accessible.</p>
                         <ul class="feature-description">
                             <li>Import contacts directly from your phone</li>
                             <li>Add members manually</li>
@@ -434,7 +451,8 @@
                     </div>
                     <div class="feature-content">
                         <h3 class="feature-title">Session Tracking</h3>
-                        <p class="feature-summary">Monitor client session balances with automatic tracking and instant visual feedback on remaining appointments.</p>
+                        <p class="feature-summary">Monitor client session balances with automatic tracking and instant
+                            visual feedback on remaining appointments.</p>
                         <ul class="feature-description">
                             <li>Track session packages with automatic deduction</li>
                             <li>Events complete automatically</li>
@@ -445,11 +463,13 @@
 
                 <div class="feature-card">
                     <div class="feature-image-wrapper">
-                        <img src="appscreens/Appscreen - New Event Modal.png" alt="Flexible Scheduling" class="feature-icon">
+                        <img src="appscreens/Appscreen - New Event Modal.png" alt="Flexible Scheduling"
+                            class="feature-icon">
                     </div>
                     <div class="feature-content">
                         <h3 class="feature-title">Flexible Scheduling</h3>
-                        <p class="feature-summary">Schedule single appointments or recurring series with full support for both personal sessions and group classes.</p>
+                        <p class="feature-summary">Schedule single appointments or recurring series with full support
+                            for both personal sessions and group classes.</p>
                         <ul class="feature-description">
                             <li>Create one-time or recurring sessions</li>
                             <li>Support for both individual and group events</li>
@@ -464,7 +484,8 @@
                     </div>
                     <div class="feature-content">
                         <h3 class="feature-title">Customizable Views</h3>
-                        <p class="feature-summary">Adapt your calendar to match your workflow by choosing the view that works best for your scheduling needs.</p>
+                        <p class="feature-summary">Adapt your calendar to match your workflow by choosing the view that
+                            works best for your scheduling needs.</p>
                         <ul class="feature-description">
                             <li>Switch between day, 3-day, and week views</li>
                             <li>Match your workflow</li>
@@ -484,4 +505,5 @@
         </p>
     </footer>
 </body>
+
 </html>
